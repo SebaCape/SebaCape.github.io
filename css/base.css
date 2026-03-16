@@ -1,0 +1,126 @@
+/* ─── RESET ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+/* ─── VARIABLES ──────────────────────────────────────────────── */
+:root {
+  --c0: #000000;
+  --c1: #111111;
+  --c2: #1e1e1e;
+  --c3: #3c3c3c;
+  --c4: #4d4d4d;
+  --white: #ffffff;
+  --off-white: #e8e8e8;
+  --muted: #888888;
+  --font-display: 'Courier New', Courier, monospace;
+  --font-mono: 'DM Mono', monospace;
+  --nav-h: 72px;
+}
+
+/* ─── BASE ───────────────────────────────────────────────────── */
+body {
+  background: var(--c0);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* ─── SHARED SECTION SCAFFOLDING ────────────────────────────── */
+section {
+  padding: 120px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.section-full  { max-width: none; padding-left: 0; padding-right: 0; }
+.section-inner { padding: 120px 60px; max-width: 1300px; margin: 0 auto; }
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.section-label::before { content: attr(data-num); font-size: 10px; color: var(--c3); }
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 400;            /* thin Courier New throughout */
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 64px;
+}
+
+.divider { width: 100%; height: 1px; background: var(--c2); }
+
+/* ─── SHARED BUTTON ──────────────────────────────────────────── */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid var(--c3);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.btn-primary  { background: var(--white); color: var(--c0); border-color: var(--white); }
+.btn-primary:hover  { background: var(--off-white); }
+.btn-secondary { background: transparent; color: var(--white); }
+.btn-secondary:hover { background: var(--c2); }
+
+/* ─── PROFILE IMAGE BLOCKS ───────────────────────────────────── */
+/*
+  Drop your photo by replacing the <div class="profile-placeholder">
+  with <img src="./Assets/your-photo.jpg" class="profile-img" alt="Sebastian" />
+  The sizing is handled per-placement in main.css / hero.css.
+*/
+.profile-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c2);
+  border: 1px dashed var(--c3);
+  color: var(--c4);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── ANIMATIONS ─────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(74,222,128,0); }
+}
+
+/* ─── SCROLLBAR ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--c0); }
+::-webkit-scrollbar-thumb { background: var(--c3); }
+::-webkit-scrollbar-thumb:hover { background: var(--c4); }

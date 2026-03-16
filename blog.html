@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Sebastian Capellan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────────────── -->
+  <nav id="main-nav" class="scrolled">
+    <a class="nav-logo" href="index.html">SC</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <ul class="nav-drawer" id="nav-drawer">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+
+  <!-- ─── BLOG HERO ─────────────────────────────────────────────── -->
+  <div class="blog-hero">
+    <p class="blog-hero-label">Writing</p>
+    <h1 class="blog-hero-title">Blog</h1>
+    <p class="blog-hero-sub">Notes on systems, algorithms, open source, and whatever I'm working through.</p>
+  </div>
+
+  <!-- setup note: hidden by default, shown when /blog/index.json is missing -->
+  <div class="setup-note" id="setup-note" style="display:none;">
+    <strong>Getting started:</strong> Create a <code>/blog</code> folder in your GitHub repo with an
+    <code>index.json</code> listing your posts. Each entry: <code>{"file":"post.md","title":"...","date":"...","excerpt":"...","tags":["..."]}</code>.
+    Posts render automatically — no CMS needed.
+  </div>
+
+  <!-- ─── LIST VIEW ─────────────────────────────────────────────── -->
+  <div id="list-view">
+    <div class="blog-layout">
+      <main class="blog-main">
+        <div class="post-list" id="post-list">
+          <!-- injected by blog.js -->
+        </div>
+      </main>
+      <aside class="blog-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Topics</div>
+          <div class="sidebar-tags" id="sidebar-tags">
+            <!-- injected by blog.js -->
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-title">About</div>
+          <p class="sidebar-about">
+            Notes from a CS + Data Science student at NYU. I write about algorithms, systems programming, open source, and quantitative engineering.<br><br>
+            <a href="index.html">Back to portfolio →</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ─── SINGLE POST VIEW ──────────────────────────────────────── -->
+  <div id="post-view">
+    <div class="post-full">
+      <article>
+        <a class="post-full-back" href="#" id="back-btn">← All Posts</a>
+        <div class="post-full-date"  id="post-full-date"></div>
+        <h1 class="post-full-title" id="post-full-title"></h1>
+        <div class="post-full-content" id="post-full-content"></div>
+      </article>
+      <aside class="blog-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-title">About</div>
+          <p class="sidebar-about">
+            Notes from a CS + Data Science student at NYU.<br><br>
+            <a href="index.html">Back to portfolio →</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <p>© 2025 Sebastian Capellan. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

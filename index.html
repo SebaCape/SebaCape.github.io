@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastian Capellan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────────────── -->
+  <nav id="main-nav">
+    <a class="nav-logo" href="#hero">SC</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- mobile -->
+    <div class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <ul class="nav-drawer" id="nav-drawer">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────── -->
+  <section id="hero">
+    <canvas id="graph-canvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">New York University · Class of 2028</p>
+        <h1 class="hero-name">
+          Sebastian<span>Capellan</span>
+        </h1>
+        <div class="hero-role-line">
+          <span class="hero-role-prefix">—</span>
+          <span class="hero-role-typed-wrap">
+            <span id="typed-text"></span><span class="cursor-blink"></span>
+          </span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary"    href="./Assets/resume.pdf" target="_blank">Resume</a>
+          <a class="btn btn-secondary"  href="#contact">Get in Touch</a>
+        </div>
+      </div>
+
+      <!--
+        PHOTO SLOT 1 — Hero
+        Replace the div below with:
+        <img src="./Assets/photo-hero.jpg" class="profile-img" alt="Sebastian Capellan" />
+      -->
+      <div class="hero-photo">
+        <div class="profile-placeholder">Your photo here</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+      Scroll to explore
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ─── ABOUT ────────────────────────────────────────────────── -->
+  <section id="about">
+    <p class="section-label" data-num="01">About</p>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="about-grid">
+
+      <div class="about-left">
+        <!--
+          PHOTO SLOT 2 — About
+          Replace the div below with:
+          <img src="./Assets/photo-about.jpg" class="profile-img" alt="Sebastian Capellan" />
+        -->
+        <div class="about-photo">
+          <div class="profile-placeholder">Your photo here</div>
+        </div>
+
+        <div class="about-text">
+          <p>I'm a second-year student at NYU pursuing a joint degree in Computer Science and Data Science, with a deep orientation toward quantitative engineering and systems programming. I approach problems from first principles — writing things from scratch, reading primary sources, and building tools that didn't exist before.</p>
+          <p>My interests span platform engineering, low-level systems, and the intersection of software and quantitative finance. I'm drawn to infrastructure that other engineers build on top of — the kind of work with genuine leverage.</p>
+          <p>Outside of engineering, I'm an active chess player, a hobbyist game developer, and someone with long-term interest in philanthropy and public policy.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">SQL / SQLite</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Kotlin</span>
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Godot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Years Academic CS</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years Hobbyist Dev</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Industry &amp; Research Roles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">OSS</div>
+          <div class="stat-label">Open Source Contributor</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────────────── -->
+  <section id="experience" class="section-full">
+    <div class="section-inner">
+      <p class="section-label" data-num="02">Experience</p>
+      <h2 class="section-title">What I've Done</h2>
+      <div class="timeline">
+
+        <!-- Duolingo -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <div class="timeline-date">Summer 2026</div>
+            <div class="timeline-company">Duolingo</div>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-role">
+              Software Engineer Thrive Intern
+              <span class="timeline-role-badge">(Incoming)</span>
+            </div>
+            <p class="timeline-desc">Incoming intern in Duolingo's Thrive program, joining the Platform Engineering team. Focused on Python tooling, pipeline orchestration, and internal observability infrastructure that the broader engineering organization builds on.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Python</span>
+              <span class="timeline-tag">Platform Engineering</span>
+              <span class="timeline-tag">Observability</span>
+            </div>
+          </div>
+          <!--
+            LOGO: replace the placeholder div with:
+            <div class="timeline-logo"><img src="./Assets/logos/duolingo.png" alt="Duolingo" /></div>
+          -->
+          <div class="timeline-logo">
+            <div class="timeline-logo-placeholder">D</div>
+          </div>
+        </div>
+
+        <!-- UCSF -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <div class="timeline-date">Oct 2025 – Present</div>
+            <div class="timeline-company">UCSF</div>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-role">Computational Chemistry Research Assistant</div>
+            <p class="timeline-desc">Building a queryable polymer database for materials science research at the University of California, San Francisco. Architected a full migration from JSON/CSV to SQLite with Next.js API routes, implementing a TypeScript seeder and singleton DB connection pattern for significant query performance gains.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Next.js</span>
+              <span class="timeline-tag">TypeScript</span>
+              <span class="timeline-tag">SQLite</span>
+              <span class="timeline-tag">Research</span>
+            </div>
+          </div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-placeholder">UC</div>
+          </div>
+        </div>
+
+        <!-- Carabiner -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <div class="timeline-date">Jun – Jul 2025</div>
+            <div class="timeline-company">Carabiner Consultancy</div>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-role">Software Developer</div>
+            <p class="timeline-desc">Contributed to software development projects in a consultancy setting, building and maintaining client-facing applications and internal tooling across multiple engagements.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Software Development</span>
+              <span class="timeline-tag">Consulting</span>
+            </div>
+          </div>
+          <div class="timeline-logo">
+            <div class="timeline-logo-placeholder">CB</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────────── -->
+  <section id="projects">
+    <p class="section-label" data-num="03">Projects</p>
+    <h2 class="section-title">What I've Built</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <!-- Replace with: <img src="./Assets/project-kv.jpg" alt="KV Store" /> -->
+          <div class="project-img-placeholder">Project Image</div>
+        </div>
+        <div class="project-info">
+          <div class="project-num">01</div>
+          <h3 class="project-title">Multithreaded KV Store</h3>
+          <p class="project-desc">A concurrent key-value store written in C, demonstrating low-level memory management, thread safety, and systems programming depth.</p>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/SebaCape" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <div class="project-img-placeholder">Project Image</div>
+        </div>
+        <div class="project-info">
+          <div class="project-num">02</div>
+          <h3 class="project-title">Polymer Research Database</h3>
+          <p class="project-desc">Queryable polymer database for UCSF research. Migrated from JSON/CSV to SQLite with Next.js API routes for dramatic performance gains.</p>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/SebaCape" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <div class="project-img-placeholder">Project Image</div>
+        </div>
+        <div class="project-info">
+          <div class="project-num">03</div>
+          <h3 class="project-title">Game Development</h3>
+          <p class="project-desc">A collection of indie games built in Unity and Godot, spanning multiple genres and experimental mechanics. Published on itch.io.</p>
+          <div class="project-links">
+            <a class="project-link" href="https://sebacape.itch.io/" target="_blank">itch.io →</a>
+            <a class="project-link" href="https://github.com/SebaCape" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────────── -->
+  <section id="contact">
+    <p class="section-label" data-num="04">Contact</p>
+    <h2 class="section-title">Let's Talk</h2>
+    <div class="contact-layout">
+
+      <div class="contact-left">
+        <!--
+          PHOTO SLOT 3 — Contact
+          Replace the div below with:
+          <img src="./Assets/photo-contact.jpg" class="profile-img" alt="Sebastian Capellan" />
+        -->
+        <div class="contact-photo">
+          <div class="profile-placeholder">Photo</div>
+        </div>
+
+        <p class="contact-intro">I'm always open to conversations about engineering, research, internships, and anything at the intersection of systems and quantitative work. Reach out directly — I respond to everything.</p>
+        <div class="availability-badge">
+          <span class="badge-dot"></span>
+          Available for Summer 2026 opportunities
+        </div>
+      </div>
+
+      <div class="contact-buttons">
+        <a class="contact-btn" href="mailto:scapellan55@gmail.com">
+          <div class="contact-btn-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div class="contact-btn-body">
+            <div class="contact-btn-label">Email</div>
+            <div class="contact-btn-val">scapellan55@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-btn" href="https://www.linkedin.com/in/sebacape/" target="_blank">
+          <div class="contact-btn-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-btn-body">
+            <div class="contact-btn-label">LinkedIn</div>
+            <div class="contact-btn-val">sebacape</div>
+          </div>
+        </a>
+        <a class="contact-btn" href="https://github.com/SebaCape" target="_blank">
+          <div class="contact-btn-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="contact-btn-body">
+            <div class="contact-btn-label">GitHub</div>
+            <div class="contact-btn-val">SebaCape</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <p>© 2025 Sebastian Capellan. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/graph.js"></script>
+  <script src="js/typer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
