@@ -1,1 +1,9 @@
-[]
+[
+    {
+    "file": "first_blog.md",
+    "title": "First Blog (Hello, World!)",
+    "date": "March 2026",
+    "excerpt": "First blog made on my revamped portfolio website.",
+    "tags": ["Software Development", "Rant"]
+    }
+]
