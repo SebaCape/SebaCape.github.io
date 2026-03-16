@@ -1,8 +1,3 @@
----
-layout: post
-title: First Blog (Hello, World!)
----
-
 ## Welcome.
 
 To my new portfolio website. I ultimately decided on revamping it, as my old one was made in my freshman year following a tutorial beat by beat, and I figured that at this point, it was something that I had outgrown to an extent.
