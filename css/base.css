@@ -78,11 +78,6 @@ section {
 .btn-secondary:hover { background: var(--c2); }
 
 /* ─── PROFILE IMAGE BLOCKS ───────────────────────────────────── */
-/*
-  Drop your photo by replacing the <div class="profile-placeholder">
-  with <img src="./Assets/your-photo.jpg" class="profile-img" alt="Sebastian" />
-  The sizing is handled per-placement in main.css / hero.css.
-*/
 .profile-placeholder {
   width: 100%;
   height: 100%;

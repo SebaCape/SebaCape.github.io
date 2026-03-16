@@ -140,7 +140,7 @@
 
 /* logo square */
 .timeline-logo {
-  width: 72px; height: 72px;
+  width: 64px; height: 64px;
   border-radius: 14px;
   border: 1px solid var(--c3);
   background: var(--c2);
@@ -149,15 +149,12 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 4px;
   transition: border-color 0.3s ease;
 }
 .timeline-item:hover .timeline-logo { border-color: var(--c4); }
 .timeline-logo img {
   width: 100%; height: 100%;
   object-fit: contain;
-  padding: 10px;
-  filter: grayscale(100%) brightness(1.4);
   transition: filter 0.3s ease;
 }
 .timeline-item:hover .timeline-logo img { filter: grayscale(0%) brightness(1); }
@@ -256,8 +253,7 @@
 }
 .badge-dot {
   width: 6px; height: 6px;
-  background: #4ade80; border-radius: 50%;
-  animation: pulse-dot 2s ease-in-out infinite;
+  background: #de0000; border-radius: 50%;
 }
 
 /* contact buttons */

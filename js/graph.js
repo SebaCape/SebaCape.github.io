@@ -28,7 +28,7 @@
       y:  Math.random() * H,
       vx: (Math.random() - 0.5) * SPEED,
       vy: (Math.random() - 0.5) * SPEED,
-      r:  Math.random() * 1.5 + 0.8,       // smaller, sharper dots
+      r:  Math.random() * 1.5 + 0.8,   
     };
   }
 
@@ -40,7 +40,7 @@
   function draw() {
     ctx.clearRect(0, 0, W, H);
 
-    /* edges */
+    /* draw edges between existing nodes */
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const dx = nodes[i].x - nodes[j].x;
