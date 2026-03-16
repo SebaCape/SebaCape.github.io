@@ -4,8 +4,8 @@
     
   const GITHUB_USER = 'SebaCape';
   const GITHUB_REPO = 'SebaCape.github.io'; 
-  const INDEX_URL   = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/blog/index.json`;
-  const RAW_BASE    = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/blog/`;
+  const INDEX_URL   = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/blog/index.json`;
+  const RAW_BASE    = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/blog/`;
 
   /* ── DOM refs ── */
   const postList    = document.getElementById('post-list');
