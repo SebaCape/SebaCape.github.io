@@ -5,10 +5,10 @@
   if (!el) return;
 
   const ROLES = [
-    'Software Developer',
-    'Platform Engineer',
+    'Software Engineer',
+    'Research Scientist',
     'Systems Programmer',
-    'Quantitative Thinker',
+    'Mathematician',
     'OSS Contributor',
     'Game Developer',
   ];
