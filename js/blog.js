@@ -52,7 +52,7 @@
     md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g,  '<a href="$2">$1</a>');
 
     // paragraphs — split on blank lines, skip block elements
-    const blocks = md.split(/\n{2,}/);
+    const blocks = md.split(/\n[\t ]*\n/);
     return blocks.map(b => {
       b = b.trim();
       if (!b) return '';
