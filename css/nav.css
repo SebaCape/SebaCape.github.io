@@ -19,7 +19,7 @@ nav.scrolled {
 .nav-logo {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--white);
@@ -32,7 +32,7 @@ nav.scrolled {
 }
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);

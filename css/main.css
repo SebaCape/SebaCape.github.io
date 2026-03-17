@@ -111,8 +111,8 @@
 }
 .timeline-company {
   font-family: var(--font-display);
-  font-size: 13px; font-weight: 400;
-  letter-spacing: 0.03em; color: var(--c4);
+  font-size: 13px; font-weight: 00;
+  letter-spacing: 0.03em; color: var(--muted);
 }
 
 .timeline-role {

@@ -14,7 +14,7 @@ html { scroll-behavior: smooth; }
   --muted: #888888;
   --font-display: 'Courier New', Courier, monospace;
   --font-mono: 'DM Mono', monospace;
-  --nav-h: 72px;
+  --nav-h: 84px;
 }
 
 /* ─── BASE ───────────────────────────────────────────────────── */
