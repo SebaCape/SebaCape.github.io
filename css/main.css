@@ -135,7 +135,7 @@
 .timeline-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .timeline-tag {
   font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 4px 12px; border: 1px solid var(--c3); color: var(--c4);
+  padding: 4px 12px; border: 1px solid var(--c4); color: var(--muted);
 }
 
 /* logo square */
