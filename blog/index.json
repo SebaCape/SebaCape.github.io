@@ -4,6 +4,13 @@
     "title": "First Blog (Hello, World!)",
     "date": "March 2026",
     "excerpt": "First blog made on my revamped portfolio website.",
-    "tags": ["Software Development", "Rant"]
+    "tags": ["Software Development"]
+    },
+    {
+    "file": "second_blog.md",
+    "title": "The Biggest Problem in Computational Complexity (And How it Could Solve Everything)",
+    "date": "April 2026",
+    "excerpt": "Exploring the central challenge of P vs. NP in computational complexity, and its resulting implications.",
+    "tags": ["Research/Theory"]
     }
 ]
