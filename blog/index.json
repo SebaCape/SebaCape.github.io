@@ -1,5 +1,12 @@
 [
     {
+    "file": "third_blog.md",
+    "title": "Writing an Efficient Quantitative Backtesting Engine",
+    "date": "May 2026",
+    "excerpt": "Overview on my design decisions and challenges surrounding my implementation of a quant backtesting engine.",
+    "tags": ["Software", "Finance"]
+    },
+    {
     "file": "second_blog.md",
     "title": "The Biggest Problem in Computational Complexity (And How it Could Solve Everything)",
     "date": "April 2026",
@@ -11,6 +18,6 @@
     "title": "First Blog (Hello, World!)",
     "date": "March 2026",
     "excerpt": "First blog made on my revamped portfolio website.",
-    "tags": ["Software Development"]
+    "tags": ["Software"]
     }
 ]
