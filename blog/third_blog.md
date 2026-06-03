@@ -21,7 +21,7 @@ With this, an MVP was complete. You could run the ETL script, and it would take 
 
 ### Moving beyond the MVP with more strategies
 
-Now, I am most definitely more of a developer than a financial strategist, but I still wanted to add more strategies to the engine because it would allow me to create more modularity with how strategies could be implemented in the future, and it would also be cool to see the performance of something that wasn't a simple moving average crossover.
+Now, I am most definitely more of a developer than a trained financial strategist, but I still wanted to add more strategies to the engine because it would allow me to create more modularity with how strategies could be implemented in the future, and it would also be cool to see the performance of something that wasn't a simple moving average crossover.
 
 I settled on implementing another strategy with Bollinger Bands & mean reversion, with RSI validation. A laymans explanation is the following: Bollinger Bands essentially check if an asset's market value is within 2 standard deviations of the moving mean over some set period (standard is 20 days.) If it falls out of it, depending on whether grossly above or below the mean, the strategy informs sell or buy orders respectively based on this, since stocks are very unlikely to remain outside of their statistical average for an extended period of time. The RSI (Relative Strength Index) component is essentially just a sanity check, that determines whether a stock is under or overvalued, to prevent premature orders on particularly strong uptrends or downtrends of value.
 
