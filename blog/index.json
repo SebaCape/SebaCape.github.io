@@ -1,5 +1,12 @@
 [
     {
+        "file": "fourth_blog.md",
+        "title": "Algorithmic Programming | Finding Value in Difficult Problems",
+        "date": "July 2026",
+        "excerpt": "Some tips I have for getting value out of algorithmic programming problems.",
+        "tags": ["Competitive Programming"]
+    },
+    {
     "file": "third_blog.md",
     "title": "Writing an Efficient Quantitative Backtesting Engine",
     "date": "May 2026",
