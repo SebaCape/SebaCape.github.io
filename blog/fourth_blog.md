@@ -4,7 +4,7 @@ If you want to become a professional software engineer, it is practically an ine
 
 Within the software industry, the most common way that this is tested of people is through algorithmic programming (more commonly known as "Leetcode style," or DSA problems.) I personally have a fair amount of experience with these types of problems, having solved 600+ Leetcode problems in order to train myself for interviews. Additionally, I have recently begun trying to go further, dipping my toes into competitive programming via sites like Codeforces and USACO.guide. (You can see my measly codeforces rating from the 2 contests I have very recently participated in below, but I have been having fun with it.)
 
-[image here]
+<img width="810" height="817" alt="image" src="https://github.com/user-attachments/assets/1a9db5cc-bd3e-4b26-8903-a714bb83c7d3" />
 
 Naturally, I have had some friends reach out to me seeking advice for how I solve problems of this nature, and more importantly, **how to get value out of them when you can't.** I think there are two key pieces to achieving this, as even the "unsolvable" problems can provide great value if explored correctly.
 
