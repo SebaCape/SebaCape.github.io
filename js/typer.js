@@ -10,6 +10,7 @@
     'Systems Programmer',
     'Mathematician',
     'OSS Contributor',
+    'Competitive Programmer',
     'Game Developer',
   ];
 
