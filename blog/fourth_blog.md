@@ -1,5 +1,3 @@
-Algorithmic Programming | Finding Value in Difficult Problems
-
 ## Puzzles
 
 If you want to become a professional software engineer, it is practically an inevitability that at some point you will have solve some puzzles. Whether its for interview prep, or designing actual systems, the simple truth is that the problem solving muscle obtained from these types of challenges is necessary to be an effective engineer.
